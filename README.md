@@ -214,6 +214,11 @@ O slide de apresentação final exclui da soma principal **ALB, ElastiCache, Clo
 ```text
 varejoja-aws-architecture/
 ├── README.md
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── main.js
 ├── docs/
 │   ├── VarejoJa_Apresentacao_Final.pdf 
 │   ├── Case_TCC_awsrestart.pdf            
@@ -229,6 +234,8 @@ varejoja-aws-architecture/
 │   ├── logo-varejoja.png              
 │   └── architecture-aws-pricing-calculator.png
 ```
+
+O site é estático e pode ser publicado no GitHub Pages usando a branch principal e a pasta raiz. Para atualizar fotos e redes sociais da equipe, edite os campos `photo`, `linkedin` e `github` em `js/main.js`.
 
 ## 👥 Equipe e responsabilidades
 

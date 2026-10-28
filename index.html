@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Conheça a proposta de modernização da arquitetura do marketplace VarejoJá na AWS."
+    >
+    <meta name="theme-color" content="#fffaf5">
+    <title>VarejoJá | Marketplace preparado para crescer</title>
+    <link rel="icon" href="./assets/logo-varejoja.png" type="image/png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="VarejoJá — início">
+        <img src="./assets/logo-varejoja.png" alt="VarejoJá">
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Navegação principal">
+        <a class="section-link" href="#inicio" aria-label="Início" aria-current="location">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V10Z"/></svg>
+          <span class="nav-label">Início</span>
+        </a>
+        <a class="section-link" href="#sobre" aria-label="O projeto">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg>
+          <span class="nav-label">O projeto</span>
+        </a>
+        <a class="section-link" href="#arquitetura" aria-label="Arquitetura">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19h18M5 16V9h5v7m4 0V5h5v11M7.5 12h.01M16.5 8h.01"/></svg>
+          <span class="nav-label">Arquitetura</span>
+        </a>
+        <a class="section-link" href="#equipe" aria-label="Equipe">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0m1-8a3 3 0 1 0 0-6m1 8a5 5 0 0 1 4 5"/></svg>
+          <span class="nav-label">Equipe</span>
+        </a>
+        <a class="nav-cta" href="https://github.com/M1llyz/varejoja-aws-architecture/blob/main/README.md" target="_blank" rel="noreferrer">
+          Documentação
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> Projeto final · AWS re/Start</p>
+          <h1>Um marketplace pronto para <em>crescer.</em></h1>
+          <p class="hero-description">
+            Uma proposta de modernização para a VarejoJá ganhar escala, disponibilidade
+            e segurança com uma arquitetura planejada na AWS.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-dark" href="#arquitetura">
+              Explorar arquitetura
+            </a>
+            <a class="hero-project-link" href="#sobre">
+              Conheça o projeto
+            </a>
+          </div>
+          <div class="hero-note">
+            <span class="note-mark" aria-hidden="true">✳</span>
+            <p>Uma solução pensada para acompanhar cada novo pedido.</p>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Identidade visual da VarejoJá">
+          <div class="art-orbit orbit-one"></div>
+          <div class="art-orbit orbit-two"></div>
+          <div class="art-card">
+            <img src="./assets/logo-varejoja.png" alt="">
+            <span class="art-label">VAREJO ONLINE</span>
+            <span class="art-spark spark-one" aria-hidden="true">✳</span>
+            <span class="art-spark spark-two" aria-hidden="true">✳</span>
+          </div>
+          <span class="art-caption">
+            Do data center para a nuvem
+            <img class="aws-logo hero-aws-logo" src="./assets/logo%20branca%20aws.png" alt="AWS">
+          </span>
+        </div>
+        <a class="scroll-cue" href="#sobre" aria-label="Role para conhecer o projeto">
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
+
+      <section class="section about-section" id="sobre">
+        <div class="section-heading about-heading">
+          <h2>Por que a <span class="brand-highlight">VarejoJá</span> precisa mudar para a <span class="aws-highlight">nuvem</span>?</h2>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow"><span></span> O desafio</p>
+          <p>
+            A infraestrutura legada atual cria tetos. A nuvem dá espaço para crescer.
+          </p>
+        </div>
+        <div class="challenge-grid">
+          <article class="challenge-card challenge-card-amber">
+            <h3>Picos de acesso</h3>
+            <p>Na Black Friday, muita gente entra ao mesmo tempo e o site pode travar.</p>
+            <strong>Na nuvem: a capacidade cresce sob demanda.</strong>
+          </article>
+          <article class="challenge-card challenge-card-orange">
+            <h3>Disponibilidade</h3>
+            <p>Se um componente centralizado falha, a loja inteira pode sair do ar.</p>
+            <strong>Na nuvem: duas zonas, e uma assume a outra.</strong>
+          </article>
+          <article class="challenge-card challenge-card-blue">
+            <h3>Armazenamento</h3>
+            <p>Fotos e vídeos em disco local dificultam expandir e entregar rápido.</p>
+            <strong>Na nuvem: o espaço cresce e a entrega é rápida.</strong>
+          </article>
+          <article class="challenge-card challenge-card-amber">
+            <h3>Proteção dos dados</h3>
+            <p>Backups mensais manuais aumentam o risco de perda de informações.</p>
+            <strong>Na nuvem: os backups são automáticos.</strong>
+          </article>
+        </div>
+        <p class="challenge-summary">O desafio: crescer sem comprometer a operação.</p>
+      </section>
+
+      <section class="section architecture-section" id="arquitetura">
+        <div class="section-heading architecture-heading">
+          <p class="eyebrow"><span></span> Da proposta à prática</p>
+          <h2>Os serviços e o problema que cada um resolve</h2>
+          <p class="section-intro">
+            Cada peça da arquitetura tem um motivo para estar lá.
+          </p>
+        </div>
+        <div class="solution-grid">
+          <article class="solution-card solution-card-amber">
+            <p class="solution-category">Computação</p>
+            <h3>EC2 + Auto Scaling</h3>
+            <p>Picos de acesso: aumenta a quantidade de servidores quando o movimento sobe.</p>
+          </article>
+          <article class="solution-card solution-card-blue">
+            <p class="solution-category">Rede e distribuição</p>
+            <h3>VPC + ALB + CloudFront</h3>
+            <p>Reparte os clientes e entrega fotos e vídeos rapidamente.</p>
+          </article>
+          <article class="solution-card solution-card-teal">
+            <p class="solution-category">Dados e armazenamento</p>
+            <h3>RDS Multi-AZ + ElastiCache + S3</h3>
+            <p>Banco disponível, consultas rápidas e espaço para as mídias da loja.</p>
+          </article>
+          <article class="solution-card solution-card-orange">
+            <p class="solution-category">Backup e recuperação</p>
+            <h3>RDS Backups + S3 Versioning</h3>
+            <p>Mais proteção para recuperar dados em caso de falhas ou exclusões acidentais.</p>
+          </article>
+          <article class="solution-card solution-card-blue">
+            <p class="solution-category">Segurança e observabilidade</p>
+            <h3>IAM + Security Groups + CloudWatch + SNS</h3>
+            <p>Controla acessos e avisa a equipe quando algo sai do normal.</p>
+          </article>
+        </div>
+        <div class="architecture-diagrams-heading">
+          <p class="eyebrow"><span></span> Visão da solução</p>
+          <h3>Arquitetura que <em>conecta <span>presente e futuro.</span></em></h3>
+          <p>Uma visão da infraestrutura proposta e do caminho planejado para a migração.</p>
+        </div>
+        <div class="diagram-grid">
+          <article class="diagram-card">
+            <button
+              class="diagram-image"
+              type="button"
+              aria-label="Ampliar diagrama da arquitetura proposta"
+            >
+              <img
+                src="./assets/diagrama_infraestrutura_geral.png"
+                alt="Diagrama da arquitetura AWS proposta para o marketplace VarejoJá"
+                loading="lazy"
+              >
+              <span class="diagram-open" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5M10.8 7.5v6.6M7.5 10.8h6.6"></path></svg>
+              </span>
+            </button>
+            <div class="diagram-caption">
+              <div>
+                <span class="diagram-kicker">01 / ARQUITETURA</span>
+                <h3>Marketplace na AWS</h3>
+              </div>
+              <img class="aws-logo diagram-aws-logo" src="./assets/awslogo.png" alt="AWS">
+            </div>
+          </article>
+          <article class="diagram-card">
+            <button
+              class="diagram-image"
+              type="button"
+              aria-label="Ampliar diagrama da estratégia de migração"
+            >
+              <img
+                src="./assets/diagrama_migra%C3%A7%C3%A3o.png"
+                alt="Diagrama da migração do data center legado para serviços AWS"
+                loading="lazy"
+              >
+              <span class="diagram-open" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5M10.8 7.5v6.6M7.5 10.8h6.6"></path></svg>
+              </span>
+            </button>
+            <div class="diagram-caption">
+              <div>
+                <span class="diagram-kicker">02 / MIGRAÇÃO</span>
+                <h3>Uma transição planejada</h3>
+              </div>
+              <img class="aws-logo diagram-aws-logo" src="./assets/awslogo.png" alt="AWS">
+            </div>
+          </article>
+        </div>
+        <p class="diagram-note">
+          <span aria-hidden="true">↗</span> Selecione um diagrama para visualizar em tamanho maior.
+        </p>
+      </section>
+
+      <section class="section team-section" id="equipe">
+        <div class="section-heading section-heading-row team-heading">
+          <div>
+            <p class="eyebrow"><span></span> Quem faz acontecer</p>
+            <h2>Um projeto feito<br><em>em equipe.</em></h2>
+          </div>
+          <p class="section-intro">
+            Pessoas com diferentes olhares, colaborando para construir uma proposta completa.
+          </p>
+        </div>
+        <div class="team-selector" id="team-selector" aria-label="Escolha uma pessoa para ver os detalhes"></div>
+        <article class="team-profile" id="team-profile" aria-live="polite" hidden>
+          <button class="team-profile-close" id="team-profile-close" type="button" aria-label="Fechar perfil">
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="team-profile-image">
+            <img id="team-profile-photo" alt="" hidden>
+            <div class="team-profile-placeholder" id="team-profile-placeholder" role="img"></div>
+            <span class="profile-image-label">VAREJOJÁ · NOSSA EQUIPE</span>
+          </div>
+          <div class="team-profile-content">
+            <p class="eyebrow"><span></span> <span id="team-profile-role">Papel na proposta</span></p>
+            <h3 id="team-profile-name"></h3>
+            <p class="team-profile-description" id="team-profile-description"></p>
+            <div class="team-profile-divider"></div>
+            <div class="team-profile-footer">
+              <div>
+                <span class="profile-meta-label">VAREJOJÁ · PROJETO AWS</span>
+                <span class="profile-meta-role" id="team-profile-responsibility"></span>
+              </div>
+              <div class="member-links" id="team-profile-links" aria-label="Redes sociais"></div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <dialog class="diagram-dialog" id="diagram-dialog" aria-label="Visualização ampliada do diagrama">
+      <button class="diagram-dialog-close" type="button" aria-label="Fechar visualização">
+        <span aria-hidden="true">×</span>
+      </button>
+      <img class="diagram-dialog-image" id="diagram-dialog-image" alt="">
+      <p class="diagram-dialog-caption" id="diagram-dialog-caption"></p>
+      <p class="diagram-zoom-hint">Aproxime dois dedos para ampliar e arraste para explorar.</p>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <a class="footer-brand" href="#inicio">
+          <img src="./assets/logo-varejoja.png" alt="VarejoJá">
+        </a>
+        <img class="aws-logo footer-aws-logo" src="./assets/logo%20branca%20aws.png" alt="AWS">
+        <p>Uma ideia de futuro para o varejo digital.</p>
+      </div>
+      <div class="footer-bottom">
+        <span>Projeto acadêmico · AWS re/Start</span>
+        <span>Feito em equipe, com propósito. <span aria-hidden="true">✳</span></span>
+      </div>
+    </footer>
+  </body>
+</html>
