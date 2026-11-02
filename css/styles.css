@@ -172,6 +172,44 @@ body {
   transform: translateY(0) scale(0.98);
 }
 
+@media (min-width: 681px) and (max-width: 900px) {
+  .site-header {
+    gap: 0.8rem;
+  }
+
+  .site-nav {
+    gap: 0.4rem;
+  }
+
+  .site-nav .section-link {
+    display: grid;
+    width: 36px;
+    height: 40px;
+    place-items: center;
+  }
+
+  .nav-icon {
+    display: block;
+    width: 19px;
+    height: 19px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .site-nav .nav-cta {
+    min-height: 40px;
+    padding: 0 0.8rem;
+    font-size: 0.75rem;
+  }
+}
+
 .hero {
   position: relative;
   display: grid;
@@ -888,6 +926,224 @@ body {
   color: var(--orange-dark);
 }
 
+.cost-heading,
+.evolution-heading {
+  max-width: none;
+}
+
+.cost-heading h2,
+.evolution-heading h2 {
+  color: var(--orange-deep);
+  font-size: clamp(2.1rem, 4vw, 3.2rem);
+  letter-spacing: -0.045em;
+}
+
+.cost-heading .section-intro,
+.evolution-heading .section-intro {
+  max-width: 760px;
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cost-content {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(250px, 0.88fr);
+  align-items: start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cost-table-wrapper {
+  min-width: 0;
+}
+
+.cost-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  font-size: 0.8rem;
+}
+
+.cost-table caption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.cost-table th,
+.cost-table td {
+  padding: 0.68rem 0.6rem;
+  border: 1px solid #e6ddd3;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.cost-table thead th {
+  color: var(--white);
+  background: var(--orange-deep);
+  font-weight: 700;
+}
+
+.cost-table thead th:first-child {
+  width: 19%;
+}
+
+.cost-table tbody th {
+  width: 19%;
+  color: #252f40;
+  background: #f1f1f3;
+  font-weight: 700;
+}
+
+.cost-table tbody tr:nth-child(even) td {
+  background: #f7f6f5;
+}
+
+.cost-status {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  line-height: 1.45;
+}
+
+.cost-status > span {
+  flex: 0 0 auto;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.cost-status-negative {
+  color: #a52c1d;
+}
+
+.cost-status-positive {
+  color: #006b58;
+}
+
+.cost-highlights {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+}
+
+.cost-highlight {
+  position: relative;
+  padding: 0.72rem 0.85rem 0.72rem 1.25rem;
+  border-radius: 12px;
+  background: #f1f1f3;
+}
+
+.cost-highlight::before {
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 0;
+  width: 7px;
+  border-radius: 0 4px 4px 0;
+  background: var(--card-accent);
+  content: "";
+}
+
+.cost-highlight-orange,
+.challenge-card-orange {
+  --card-accent: var(--orange-deep);
+}
+
+.cost-highlight-blue,
+.challenge-card-blue {
+  --card-accent: var(--blue);
+}
+
+.cost-highlight-amber,
+.challenge-card-amber {
+  --card-accent: #f2a000;
+}
+
+.cost-highlight-teal,
+.challenge-card-teal {
+  --card-accent: var(--teal);
+}
+
+.cost-highlight dt {
+  color: var(--card-accent);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.cost-highlight dd {
+  margin: 0.2rem 0 0;
+  color: #687991;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.migration-cost {
+  margin: 1.6rem 0 0;
+  color: var(--orange-deep);
+  font-size: 0.94rem;
+}
+
+.cost-disclaimer {
+  margin: 0.4rem 0 0;
+  color: #414959;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.evolution-section {
+  padding-top: 2rem;
+}
+
+.evolution-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.evolution-card {
+  min-height: 155px;
+  padding: 1.2rem 1.3rem 1.2rem 1.5rem;
+}
+
+.evolution-card .evolution-category {
+  margin: 0 0 0.8rem;
+  color: var(--card-accent);
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.evolution-card h3 {
+  font-size: 1.25rem;
+}
+
+.evolution-card > p:last-child {
+  margin-top: 0.8rem;
+  font-size: 0.92rem;
+}
+
+.evolution-summary {
+  margin: 2rem 0 0;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  color: var(--white);
+  background: var(--blue);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: center;
+}
+
 .diagram-dialog {
   position: fixed;
   width: min(96vw, 1500px);
@@ -1023,7 +1279,7 @@ body.has-open-dialog {
   flex-direction: column;
   align-items: center;
   gap: 0.7rem;
-  min-width: 82px;
+  min-width: 96px;
   padding: 0;
   border: 0;
   background: transparent;
@@ -1034,8 +1290,8 @@ body.has-open-dialog {
 
 .team-avatar {
   display: grid;
-  width: 78px;
-  height: 78px;
+  width: 92px;
+  height: 92px;
   place-items: center;
   overflow: hidden;
   border: 3px solid transparent;
@@ -1205,19 +1461,6 @@ body.has-open-dialog {
   padding: clamp(1.6rem, 4vw, 4rem);
 }
 
-.team-profile-content .eyebrow {
-  margin-bottom: 1rem;
-  color: var(--muted);
-}
-
-.team-profile-content .eyebrow > span:last-child {
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  background: none;
-  letter-spacing: 0.12em;
-}
-
 .team-profile-content h3 {
   margin: 0;
   font-family: var(--font-display);
@@ -1227,12 +1470,34 @@ body.has-open-dialog {
   line-height: 1;
 }
 
+.team-profile-bio,
 .team-profile-description {
   max-width: 460px;
-  margin: 1.3rem 0 0;
-  color: var(--muted);
   font-size: 0.96rem;
   line-height: 1.75;
+}
+
+.team-profile-bio {
+  margin: 1.1rem 0 0;
+  color: var(--ink);
+}
+
+.team-profile-description {
+  margin: 1.3rem 0 0;
+  color: var(--muted);
+}
+
+.team-profile-responsibility {
+  margin-top: 1.1rem;
+}
+
+.team-profile-responsibility .profile-meta-label {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.team-profile-responsibility .team-profile-description {
+  margin: 0;
 }
 
 .team-profile-divider {
@@ -1252,6 +1517,10 @@ body.has-open-dialog {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+}
+
+.team-profile-footer > div[hidden] {
+  display: none;
 }
 
 .profile-meta-label,
@@ -1427,6 +1696,14 @@ body.has-open-dialog {
     flex-wrap: wrap;
     gap: 1.6rem 2rem;
   }
+
+  .cost-content {
+    grid-template-columns: 1fr;
+  }
+
+  .cost-highlights {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (min-width: 681px) {
@@ -1533,8 +1810,8 @@ body.has-open-dialog {
 
   .site-nav .section-link {
     display: grid;
-    width: 48px;
-    height: 46px;
+    width: 40px;
+    height: 44px;
     place-items: center;
     border-radius: 999px;
     color: #d3cec7;
@@ -1755,6 +2032,110 @@ body.has-open-dialog {
     margin-top: 0.7rem;
   }
 
+  .cost-section {
+    padding-top: 4.5rem;
+  }
+
+  .cost-heading h2,
+  .evolution-heading h2 {
+    font-size: clamp(2rem, 8vw, 2.8rem);
+  }
+
+  .cost-heading .section-intro,
+  .evolution-heading .section-intro {
+    font-size: 0.92rem;
+  }
+
+  .cost-content {
+    gap: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .cost-table {
+    font-size: 0.7rem;
+  }
+
+  .cost-table th,
+  .cost-table td {
+    padding: 0.52rem 0.38rem;
+  }
+
+  .cost-table tbody th {
+    width: 20%;
+  }
+
+  .cost-table thead th:first-child {
+    width: 20%;
+  }
+
+  .cost-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .cost-status {
+    gap: 0.15rem;
+  }
+
+  .cost-status > span {
+    font-size: 0.85rem;
+  }
+
+  .cost-highlights {
+    gap: 0.55rem;
+  }
+
+  .cost-highlight {
+    padding: 0.68rem 0.6rem 0.68rem 1rem;
+  }
+
+  .cost-highlight dt {
+    font-size: 1.08rem;
+  }
+
+  .cost-highlight dd {
+    font-size: 0.72rem;
+  }
+
+  .migration-cost,
+  .cost-disclaimer {
+    font-size: 0.82rem;
+  }
+
+  .evolution-section {
+    padding-top: 0;
+  }
+
+  .evolution-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+  }
+
+  .evolution-card {
+    min-height: initial;
+    padding: 1.1rem 1rem 1.1rem 1.4rem;
+  }
+
+  .evolution-card .evolution-category {
+    margin-bottom: 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .evolution-card h3 {
+    font-size: 1.12rem;
+  }
+
+  .evolution-card > p:last-child {
+    margin-top: 0.6rem;
+    font-size: 0.86rem;
+  }
+
+  .evolution-summary {
+    margin-top: 1.4rem;
+    padding: 0.9rem 1rem;
+    font-size: 0.98rem;
+  }
+
   .architecture-diagrams-heading {
     margin-top: 3.5rem;
   }
@@ -1865,6 +2246,7 @@ body.has-open-dialog {
     font-size: clamp(2.6rem, 12vw, 3.8rem);
   }
 
+  .team-profile-bio,
   .team-profile-description {
     margin-top: 1rem;
     font-size: 0.9rem;

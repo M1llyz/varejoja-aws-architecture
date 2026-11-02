@@ -8,6 +8,8 @@
 
 Uma proposta escalável, segura e preparada para crescer.
 
+[Acesse o site do projeto no GitHub Pages](https://m1llyz.github.io/varejoja-aws-architecture/)
+
 ![AWS](https://img.shields.io/badge/Cloud-AWS-FF9900?logo=amazonaws&logoColor=white)
 ![Região](https://img.shields.io/badge/Região-sa--east--1-232F3E)
 ![Escopo](https://img.shields.io/badge/Escopo-Arquitetura%20Proposta-orange)
@@ -235,23 +237,23 @@ varejoja-aws-architecture/
 │   └── architecture-aws-pricing-calculator.png
 ```
 
-O site é estático e pode ser publicado no GitHub Pages usando a branch principal e a pasta raiz. Para atualizar fotos e redes sociais da equipe, edite os campos `photo`, `linkedin` e `github` em `js/main.js`.
+O site é estático e pode ser publicado no GitHub Pages usando a branch principal e a pasta raiz. Para atualizar os perfis da equipe, edite os campos `miniBio`, `contribution`, `careerInterest`, `photo`, `linkedin` e `github` de cada integrante em `js/main.js`. O campo `contribution` reúne as responsabilidades de cada pessoa e aparece sob o rótulo “Responsabilidade no projeto”; o cargo de interesse aparece abaixo.
 
 ## 👥 Equipe e responsabilidades
 
 | Integrante | Papel na proposta final |
 |---|---|
 | Ingrid | Liderança ágil |
-| Jamilly | Estratégia de migração |
+| Jamilly | Estratégia de migração; melhorias e implementação futura |
 | Guilherme | Jornada e documentação |
 | Bruno | Seleção de serviços AWS |
-| Paulo | Diagrama de arquitetura |
+| Paulo | Diagrama e orçamento da arquitetura; desenvolvimento do site do projeto |
 | Erick | Capacidade e escala |
 | Marjorie | Estimativa de custos |
 
 > [!IMPORTANT]
 > Atribuições refletem a **apresentação final**, não necessariamente horas ou tarefas executadas tendo em vista que se trata de um projeto colaborativo. 
-> Link da equipe: [VarejoJá no Linktree](https://linktr.ee/varejoja.awsrestart).
+> Site do projeto: [VarejoJá no GitHub Pages](https://m1llyz.github.io/varejoja-aws-architecture/).
 
 ## 📚 Referências principais
 

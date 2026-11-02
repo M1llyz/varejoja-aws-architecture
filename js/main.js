@@ -3,6 +3,8 @@ const teamMembers = [
     name: "Ingrid Pereira",
     role: "Liderança ágil",
     contribution: "Organização e acompanhamento ágil do trabalho colaborativo.",
+    miniBio: "Profissional com experiência de mercado e perfil comunicativo, atuando em atendimento, operações e gestão de SLAs em banco, multinacional e grandes empresas. Formada em Administração de Empresas, com formação técnica Full Stack e certificação em Scrum/Kanban. Meu diferencial está nas soft skills: comunicação clara, escuta ativa, organização e facilidade para facilitar o diálogo entre times, áreas e sistemas, apoiando a implantação de soluções e a condução de projetos. Em formação em Cloud Computing pela Generation Brasil, busco unir pessoas, tecnologia e IA na transformação digital.",
+    careerInterest: "Analista de Transformação Digital e Inteligência Artificial | Analista de Estratégia em Dados & IA",
     photo: "./assets/Ingrid Pereira.png",
     linkedin: "https://www.linkedin.com/in/ingridpereira1/",
     github: "https://github.com/ingridkyle1",
@@ -10,51 +12,63 @@ const teamMembers = [
   {
     name: "Jamilly Vertuoza de Araujo",
     role: "Estratégia de migração",
-    contribution: "Planejamento da transição da infraestrutura legada para a AWS.",
+    contribution: "Planejamento da transição da infraestrutura legada para a AWS, além de melhorias e implementação futura.",
+    miniBio: "Graduanda em Sistemas de Informação e curiosa nata com experiência em tecnologia e projetos que integram dados, automação e cloud. Focada em conectar Python, SQL, AWS, APIs e agentes de IA para desenvolver soluções inteligentes e escaláveis.",
+    careerInterest: "Data & Automation Engineer",
     photo: "./assets/Jamilly Araujo.png",
     linkedin: "https://www.linkedin.com/in/005jamilly/",
     github: "https://github.com/M1llyz",
   },
   {
-    name: "Guilherme Batista Calado",
-    role: "Jornada e documentação",
-    contribution: "Construção da jornada do projeto e organização da documentação.",
-    photo: "./assets/Guilherme Batista Calado.png",
-    linkedin: "https://www.linkedin.com/in/c4lado/",
-    github: "",
-  },
-  {
-    name: "Bruno Otto Cavalcante Vieira",
-    role: "Seleção de serviços AWS",
-    contribution: "Análise e seleção dos serviços considerados na arquitetura.",
-    photo: "./assets/BrunoVieira.png",
-    linkedin: "https://www.linkedin.com/in/bruno-otto-cavalcante-vieira/",
-    github: "",
-  },
-  {
     name: "Paulo Henrique de Almeida Pinto",
     role: "Diagrama de arquitetura",
-    contribution: "Representação visual da arquitetura AWS proposta.",
+    contribution: "Representação visual e orçamento da arquitetura AWS, além do desenvolvimento do site do projeto.",
+    miniBio: "Desenvolvedor Full Stack Jr. com passagem pelo mercado financeiro e determinação para construir soluções reais. Atuo com .NET, React e AWS, unindo visão de negócio e tecnologia. Bacharel em Sistemas de Informação, com projetos no GitHub e foco nos estudos visando ser um DevOps Engineer Sênior.",
+    careerInterest: "Desenvolvedor Full Stack Jr | Analista de Cloud Jr | Analista de Sistemas Jr",
     photo: "./assets/paulopinto.png",
     linkedin: "https://www.linkedin.com/in/pauloalmeidapinto/",
     github: "https://github.com/dev-phap",
   },
   {
+    name: "Guilherme Batista Calado",
+    role: "Jornada e documentação",
+    contribution: "Construção da jornada do projeto e organização da documentação.",
+    miniBio: "Profissional de CX e analise de processos com experiência no mercado financeiro, administração de Zendesk, automação de processos, análise de indicadores e melhoria contínua, unindo tecnologia e eficiência operacional",
+    careerInterest: "Analista de processos e melhoria continua",
+    photo: "./assets/Guilherme Batista Calado.png",
+    linkedin: "https://www.linkedin.com/in/c4lado/",
+    github: "https://github.com/c4lado",
+  },
+  {
+    name: "Bruno Otto Cavalcante Vieira",
+    role: "Seleção de serviços AWS",
+    contribution: "Análise e seleção dos serviços considerados na arquitetura.",
+    miniBio: "Profissional com mais de 10 anos de experiência em CX e Suporte, atualmente estudante de Análise e Desenvolvimento de Sistemas. Tenho interesse em computação em nuvem e desenvolvimento de software, buscando integrar minha experiência com clientes ao universo da tecnologia.",
+    careerInterest: "Cloud Computing e Desenvolvimento de Software",
+    photo: "./assets/BrunoVieira.png",
+    linkedin: "https://www.linkedin.com/in/bruno-otto-cavalcante-vieira/",
+    github: "https://github.com/bruno-otto",
+  },
+  {
     name: "Erick Alexandre",
     role: "Capacidade e escala",
     contribution: "Análise da capacidade e da estratégia de escala da infraestrutura.",
+    miniBio: "Técnico em Informática e estudante de ADS, com experiência em Suporte Técnico e conhecimentos em AWS, Linux, Python e SQL. Tenho interesse em Cloud Computing e Segurança da Informação e busco evoluir com projetos práticos.",
+    careerInterest: "Cloud Engineer",
     photo: "./assets/ErickAlexandre.png",
     linkedin: "https://www.linkedin.com/in/alexandrerick/",
-    github: "",
+    github: "https://github.com/ErickSpina",
   },
-  {
+  /*{
     name: "Marjorie Jesus dos Santos",
     role: "Estimativa de custos",
     contribution: "Estimativa de custos dos serviços considerados na proposta.",
+    miniBio: "",
+    careerInterest: "",
     photo: "./assets/MarjorieSantos.png",
     linkedin: "https://www.linkedin.com/in/marjoriejds/",
     github: "",
-  },
+  },*/
 ];
 
 const socialIcons = {
@@ -97,10 +111,11 @@ function renderTeam() {
   const closeProfile = document.querySelector("#team-profile-close");
   const profilePhoto = document.querySelector("#team-profile-photo");
   const profilePlaceholder = document.querySelector("#team-profile-placeholder");
-  const profileRole = document.querySelector("#team-profile-role");
   const profileName = document.querySelector("#team-profile-name");
+  const profileBio = document.querySelector("#team-profile-bio");
   const profileDescription = document.querySelector("#team-profile-description");
-  const profileResponsibility = document.querySelector("#team-profile-responsibility");
+  const profileCareerInterestGroup = document.querySelector("#team-profile-career-interest-group");
+  const profileCareerInterest = document.querySelector("#team-profile-career-interest");
   const profileLinks = document.querySelector("#team-profile-links");
   let selectedButton;
 
@@ -126,10 +141,12 @@ function renderTeam() {
       profilePhoto.alt = "";
     }
 
-    profileRole.textContent = member.role;
     profileName.textContent = member.name;
+    profileBio.textContent = member.miniBio;
+    profileBio.hidden = !member.miniBio.trim();
     profileDescription.textContent = member.contribution;
-    profileResponsibility.textContent = member.role;
+    profileCareerInterest.textContent = member.careerInterest;
+    profileCareerInterestGroup.hidden = !member.careerInterest.trim();
     profileLinks.replaceChildren();
 
     ["linkedin", "github"].forEach((platform) => {

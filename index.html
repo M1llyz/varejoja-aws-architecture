@@ -23,6 +23,10 @@
           <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1V10Z"/></svg>
           <span class="nav-label">Início</span>
         </a>
+        <a class="section-link" href="#equipe" aria-label="Equipe">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0m1-8a3 3 0 1 0 0-6m1 8a5 5 0 0 1 4 5"/></svg>
+          <span class="nav-label">Equipe</span>
+        </a>
         <a class="section-link" href="#sobre" aria-label="O projeto">
           <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5m0-8h.01"/></svg>
           <span class="nav-label">O projeto</span>
@@ -31,9 +35,13 @@
           <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 19h18M5 16V9h5v7m4 0V5h5v11M7.5 12h.01M16.5 8h.01"/></svg>
           <span class="nav-label">Arquitetura</span>
         </a>
-        <a class="section-link" href="#equipe" aria-label="Equipe">
-          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3.5 19a5.5 5.5 0 0 1 11 0m1-8a3 3 0 1 0 0-6m1 8a5 5 0 0 1 4 5"/></svg>
-          <span class="nav-label">Equipe</span>
+        <a class="section-link" href="#custos" aria-label="Custos estimados">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18m4-14H9.5a3 3 0 0 0 0 6h5a3 3 0 0 1 0 6H7"/></svg>
+          <span class="nav-label">Custos</span>
+        </a>
+        <a class="section-link" href="#evolucao" aria-label="Evolução da arquitetura">
+          <svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 17 10 11l4 4 6-8m-6 0h6v6"/></svg>
+          <span class="nav-label">Evolução</span>
         </a>
         <a class="nav-cta" href="https://github.com/M1llyz/varejoja-aws-architecture/blob/main/README.md" target="_blank" rel="noreferrer">
           Documentação
@@ -82,6 +90,44 @@
         </a>
       </section>
 
+      <section class="section team-section" id="equipe">
+        <div class="section-heading section-heading-row team-heading">
+          <div>
+            <p class="eyebrow"><span></span> Quem faz acontecer</p>
+            <h2>Um projeto feito<br><em>em equipe.</em></h2>
+          </div>
+          <p class="section-intro">
+            Pessoas com diferentes olhares, colaborando para construir uma proposta completa.
+          </p>
+        </div>
+        <div class="team-selector" id="team-selector" aria-label="Escolha uma pessoa para ver os detalhes"></div>
+        <article class="team-profile" id="team-profile" aria-live="polite" hidden>
+          <button class="team-profile-close" id="team-profile-close" type="button" aria-label="Fechar perfil">
+            <span aria-hidden="true">×</span>
+          </button>
+          <div class="team-profile-image">
+            <img id="team-profile-photo" alt="" hidden>
+            <div class="team-profile-placeholder" id="team-profile-placeholder" role="img"></div>
+            <span class="profile-image-label">VAREJOJÁ · NOSSA EQUIPE</span>
+          </div>
+          <div class="team-profile-content">
+            <h3 id="team-profile-name"></h3>
+            <p class="team-profile-bio" id="team-profile-bio" hidden></p>
+            <div class="team-profile-responsibility">
+              <span class="profile-meta-label">Responsabilidade no projeto</span>
+              <p class="team-profile-description" id="team-profile-description"></p>
+            </div>
+            <div class="team-profile-divider"></div>
+            <div class="team-profile-footer">
+              <div id="team-profile-career-interest-group" hidden>
+                <span class="profile-meta-label">Cargo de interesse</span>
+                <span class="profile-meta-role" id="team-profile-career-interest"></span>
+              </div>
+              <div class="member-links" id="team-profile-links" aria-label="Redes sociais"></div>
+            </div>
+          </div>
+        </article>
+      </section>
       <section class="section about-section" id="sobre">
         <div class="section-heading about-heading">
           <h2>Por que a <span class="brand-highlight">VarejoJá</span> precisa mudar para a <span class="aws-highlight">nuvem</span>?</h2>
@@ -210,41 +256,125 @@
         </p>
       </section>
 
-      <section class="section team-section" id="equipe">
-        <div class="section-heading section-heading-row team-heading">
-          <div>
-            <p class="eyebrow"><span></span> Quem faz acontecer</p>
-            <h2>Um projeto feito<br><em>em equipe.</em></h2>
-          </div>
+      <section class="section cost-section" id="custos">
+        <div class="section-heading cost-heading">
+          <p class="eyebrow"><span></span> Investimento estimado</p>
+          <h2>Custos: estimativa da arquitetura no pico de acesso</h2>
           <p class="section-intro">
-            Pessoas com diferentes olhares, colaborando para construir uma proposta completa.
+            Região de São Paulo, sob demanda, em US$ por mês. O grande pico: uma semana de Black Friday.
           </p>
         </div>
-        <div class="team-selector" id="team-selector" aria-label="Escolha uma pessoa para ver os detalhes"></div>
-        <article class="team-profile" id="team-profile" aria-live="polite" hidden>
-          <button class="team-profile-close" id="team-profile-close" type="button" aria-label="Fechar perfil">
-            <span aria-hidden="true">×</span>
-          </button>
-          <div class="team-profile-image">
-            <img id="team-profile-photo" alt="" hidden>
-            <div class="team-profile-placeholder" id="team-profile-placeholder" role="img"></div>
-            <span class="profile-image-label">VAREJOJÁ · NOSSA EQUIPE</span>
+        <div class="cost-content">
+          <div class="cost-table-wrapper">
+            <table class="cost-table">
+              <caption>Comparativo entre a infraestrutura própria e a arquitetura na AWS</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Item</th>
+                  <th scope="col">Antes: data center próprio</th>
+                  <th scope="col">Agora: AWS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Hardware</th>
+                  <td><span class="cost-status cost-status-negative"><span aria-hidden="true">×</span> Compra de servidores (CAPEX alto)</span></td>
+                  <td><span class="cost-status cost-status-positive"><span aria-hidden="true">✓</span> Zero CAPEX: paga só o que usa</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Manutenção</th>
+                  <td><span class="cost-status cost-status-negative"><span aria-hidden="true">×</span> Peças, contratos e reposição</span></td>
+                  <td><span class="cost-status cost-status-positive"><span aria-hidden="true">✓</span> Infraestrutura gerenciada pela AWS</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Equipe 24h</th>
+                  <td><span class="cost-status cost-status-negative"><span aria-hidden="true">×</span> Plantão para operar o ambiente</span></td>
+                  <td><span class="cost-status cost-status-positive"><span aria-hidden="true">✓</span> Time foca no negócio, não no data center</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Energia e espaço</th>
+                  <td><span class="cost-status cost-status-negative"><span aria-hidden="true">×</span> Energia, refrigeração e espaço físico</span></td>
+                  <td><span class="cost-status cost-status-positive"><span aria-hidden="true">✓</span> Já embutidos no preço do serviço</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Segurança</th>
+                  <td><span class="cost-status cost-status-negative"><span aria-hidden="true">×</span> Equipe própria + ferramentas</span></td>
+                  <td><span class="cost-status cost-status-positive"><span aria-hidden="true">✓</span> Segurança física AWS + IAM, Security Groups</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Crescimento</th>
+                  <td><span class="cost-status cost-status-negative"><span aria-hidden="true">×</span> Limite de hardware conforme o catálogo</span></td>
+                  <td><span class="cost-status cost-status-positive"><span aria-hidden="true">✓</span> S3 e RDS escalam com o catálogo</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Backups</th>
+                  <td><span class="cost-status cost-status-negative"><span aria-hidden="true">×</span> Manuais, sujeitos a falha humana</span></td>
+                  <td><span class="cost-status cost-status-positive"><span aria-hidden="true">✓</span> Automáticos (RDS Multi-AZ e S3)</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Black Friday</th>
+                  <td><span class="cost-status cost-status-negative"><span aria-hidden="true">×</span> Site pode cair no pico de acessos</span></td>
+                  <td><span class="cost-status cost-status-positive"><span aria-hidden="true">✓</span> Auto Scaling + CloudFront absorvem o pico</span></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="team-profile-content">
-            <p class="eyebrow"><span></span> <span id="team-profile-role">Papel na proposta</span></p>
-            <h3 id="team-profile-name"></h3>
-            <p class="team-profile-description" id="team-profile-description"></p>
-            <div class="team-profile-divider"></div>
-            <div class="team-profile-footer">
-              <div>
-                <span class="profile-meta-label">VAREJOJÁ · PROJETO AWS</span>
-                <span class="profile-meta-role" id="team-profile-responsibility"></span>
-              </div>
-              <div class="member-links" id="team-profile-links" aria-label="Redes sociais"></div>
+          <dl class="cost-highlights">
+            <div class="cost-highlight cost-highlight-orange">
+              <dt>US$ 4.000,00</dt>
+              <dd>Prejuízo estimado por hora com o site inativo.</dd>
             </div>
-          </div>
-        </article>
+            <div class="cost-highlight cost-highlight-blue">
+              <dt>US$ 8.300,00</dt>
+              <dd>Custo fixo estimado para manter o ambiente on-premise.</dd>
+            </div>
+            <div class="cost-highlight cost-highlight-amber">
+              <dt>US$ 5.067,83</dt>
+              <dd>Custo AWS em um mês normal — economia estimada de 39%.</dd>
+            </div>
+            <div class="cost-highlight cost-highlight-teal">
+              <dt>US$ 6.042,54</dt>
+              <dd>Custo AWS em um mês com uma semana de pico — economia estimada de 27%.</dd>
+            </div>
+          </dl>
+        </div>
+        <p class="migration-cost"><strong>Custos de migração — AWS DMS e DataSync: US$ 546,74.</strong></p>
+        <p class="cost-disclaimer">Valores estimados no AWS Pricing Calculator para a região de São Paulo (sa-east-1), sob demanda. Os custos reais podem variar conforme o uso.</p>
       </section>
+
+      <section class="section evolution-section" id="evolucao">
+        <div class="section-heading evolution-heading">
+          <p class="eyebrow"><span></span> Próximos passos</p>
+          <h2>O que vem depois: evolução da arquitetura</h2>
+          <p class="section-intro">
+            Próximos passos para deixar a VarejoJá ainda mais preparada para encarar qualquer desafio.
+          </p>
+        </div>
+        <div class="evolution-grid">
+          <article class="evolution-card challenge-card challenge-card-orange">
+            <p class="evolution-category">Recuperação de desastres</p>
+            <h3>Plano de DR</h3>
+            <p>Definir RTO e RPO, testar a restauração de backups e planejar a recuperação em outra região.</p>
+          </article>
+          <article class="evolution-card challenge-card challenge-card-blue">
+            <p class="evolution-category">Infraestrutura como código</p>
+            <h3>CloudFormation / Terraform</h3>
+            <p>Recriar a infraestrutura de forma padronizada, versionada e mais rápida.</p>
+          </article>
+          <article class="evolution-card challenge-card challenge-card-teal">
+            <p class="evolution-category">Entrega contínua</p>
+            <h3>Pipelines CI/CD</h3>
+            <p>Automatizar testes e implantações, reduzindo erros nas atualizações.</p>
+          </article>
+          <article class="evolution-card challenge-card challenge-card-amber">
+            <p class="evolution-category">Gestão de custos</p>
+            <h3>FinOps e AWS Budgets</h3>
+            <p>Acompanhar gastos, configurar alertas e ajustar recursos conforme o uso.</p>
+          </article>
+        </div>
+        <p class="evolution-summary">O objetivo: evoluir com segurança, automação e continuidade do negócio.</p>
+      </section>
+
     </main>
 
     <dialog class="diagram-dialog" id="diagram-dialog" aria-label="Visualização ampliada do diagrama">
